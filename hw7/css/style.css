@@ -1,0 +1,362 @@
+/*--------------------BASE--------------------*/
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*--------------------HEADER--------------------*/
+.header-page {
+    width: 100%;
+    background-color: #D3B714;
+    color: black;
+    overflow: hidden;
+}
+
+.header-page__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.header-page__start {
+    display: flex;
+    align-items:center;
+}
+
+.header-page__end {
+    display: flex;
+    align-items:center;
+    font-size: 1.5rem;
+}
+
+.header-page__link {
+    transition: all 0.2s ease-in-out;
+}
+
+.header-page__link:hover {
+    color: #fff;
+}
+.logo__img {
+    height: 80px;
+}
+
+.header-page__ul {
+    display: flex;
+}
+
+.header-page__li:not(:last-child) {
+    padding-right: 15px;
+}
+
+#menu__toggle {
+    display: none;
+}
+
+/*--------------------MAIN CONTENT--------------------*/
+.main {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.main__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.aside__left {
+    width: 210px;
+    background-color: #C798B9;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 15px 0;
+    font-size: 1.5rem;
+    order: -1;
+}
+
+.aside__right {
+    width: 210px;
+    background-color: #9CB1C7;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 15px 0;
+    font-size: 1.5rem;
+}
+
+.content__paragraph {
+    margin: 25px;
+}
+
+.content__title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/*--------------------MAIN CONTENT CARDS--------------------*/
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.item {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100%/3 - 40px);
+    min-width: 350px;
+    margin: 0 10px;
+    margin-bottom: 40px;
+    padding: 10px 15px;
+    border: 1px solid #8E8E8E;
+    border-radius: 25px;
+}
+
+.item__content {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    flex-grow: 1;
+}
+
+.item__image-wrapper {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 15px solid #C7B7B7;
+    margin-bottom: 20px;
+}
+
+.item__img {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.item__title {
+    margin-bottom: 15px;
+}
+
+.item__description {
+    margin-bottom: 20px;
+}
+
+.item__button {
+    max-width: 100%;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+    width: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    background-color: #685174;
+}
+
+.item__button:hover {
+    box-shadow: 0px 0px 38px 0px rgb(139, 106, 156);
+}
+
+.item__button:active {
+    opacity: 0.8;
+    transform: scale(.95);
+}
+
+/*--------------------FOOTER--------------------*/
+.footer {
+    width: 100%;
+    padding: 20px;
+    background: #86EC86;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.5rem;
+  }
+
+/*--------------------MEDIA--------------------*/
+@media (max-width: 1200px) {
+    .main {
+        flex-flow: row wrap;
+    }
+
+    .aside__left {
+        flex-basis: 50%;
+    }
+
+    .aside__right {
+        flex-basis: 50%;
+        order: -1;
+    }
+}
+
+@media (max-width: 992px) {
+    .content__paragraph {
+        font-size: 1rem;
+    }
+
+    .content__title {
+        font-size: 1.5rem;
+    }
+
+    .item {
+        width: 40%;
+    }
+
+    .item__title {
+        font-size: 1.5rem;
+    }
+
+    .item__description {
+        font-size: 1rem;
+    }
+
+    .item__button {
+        width: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .item {
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo__img {
+        height: 60px;
+    }    
+
+    .aside__left {
+        flex-basis: 100%;
+        vertical-align: center;
+    }
+
+    .aside__right {
+        flex-basis: 100%;
+        order: 1;
+    }
+    
+    .item {
+        flex-basis: 70%;
+    }
+
+    .header-page__li:last-child {
+        padding-right: 15px;
+    }
+    
+    .menu__btn {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+  
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+    }
+
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+
+    .header-page__ul {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        right: -100%;
+        width: 300px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #ECEFF1;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    }
+    
+    .header-page__li {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .header-page__li:hover {
+        background-color: #ad2222;
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+    }
+    
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    
+    #menu__toggle:checked ~ .header-page__ul {
+        visibility: visible;
+        right: 0;
+    }
+
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+    transition-duration: .25s;
+    }
+
+    .header-page__ul {
+    transition-duration: .25s;
+    }
+
+    .header-page__li {
+    transition-duration: .25s;
+    }
+
+}

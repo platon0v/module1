@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.root {
+    background-color: #0d5825;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    
+}
+.blockquote-N {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    padding-top: 20px;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 200px;
+}
+img {
+    width: 150px;  
+}
+#c1 {
+    position: absolute;
+    transform: translateX(-30%)  rotate(-25deg);
+    z-index: 2;
+    
+}
+#c1:hover {
+    transition: 0.5s;
+    transform: translate(-30%,-15%) rotate(-25deg);
+}
+#c2 {
+    position: absolute;
+    transform: rotate(-10deg);
+    z-index: 3;
+    
+}
+#c2:hover {
+    transition: 0.5s;
+    transform: translateY(-15%) rotate(-10deg);
+}
+#c3 {
+    position: absolute;
+    transform: translate(30%,10%) rotate(10deg);
+    z-index: 4;
+    
+}
+#c3:hover {
+    transition: 0.5s;
+    transform: translate(30%,-10%) rotate(10deg);
+}

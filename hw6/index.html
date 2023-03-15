@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Homework#07</title>
+</head>
+<body>
+<form action="#">
+  <fieldset>
+    <legend>Контактная информация</legend>
+      <label for="name">Имя <span>*</span></label>
+      <input id="name" required><br>
+      <label for="email">Email</label>
+      <input id="email"><br>
+      <label for="telephone">Телефон</label>
+      <input id="telephone"><br>
+      <label for="countries">Страна</label>
+      <select name="countries">
+        <option value="">Выберите страну</option>
+        <option value="Украина">Украина</option>
+        <option value="Португалия">Португалия</option>
+        <option value="Базилия">Бразилия</option>
+        <option value="Молдова">Молдова</option>
+        <option value="Германия">Германия</option>
+        <option value="Франция">Франция</option>
+        <option value="Аргентина">Аргентина</option>
+        <option value="Непал">Непал</option>
+        <option value="Нидерланды">Нидерланды</option>
+        <option value="Хорватия">Хорватия</option>
+      </select>
+      <br>
+      <label for="about">Расскажите о себе</label>
+      <textarea id="about"></textarea>
+      <label class="wrapper">One
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+      <label class="wrapper">Two
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="wrapper">Three
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+
+  </fieldset>
+  <button type="submit">Отправить</button>
+</form>
+</body>
+</html>

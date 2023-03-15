@@ -1,0 +1,39 @@
+.quote{
+   color: red;
+}
+.list a[href^='https://'] {
+   color: red;
+}
+.list > li:last-child a{
+   background-color: green;
+}
+.list + p{
+   font-size: 26px;
+}
+.text-box > h3:first-child{
+   color: pink;
+}
+#greycol{
+   color: gray;
+}
+.text-box div > p{
+   color: red;
+}
+.text-box > p:nth-last-child(2){
+   color: green;
+}
+.yellow{
+   color: yellow;
+}
+.bg-box{
+   background:
+   url(img/green-png-44873.png) repeat-x bottom,
+   url(img/home.jpg) 50% 50% no-repeat,
+   url(img/crewcut.png)repeat-y,
+   url(img/donut.png)repeat-y right,
+   url(img/lamp-png-34914.png) repeat-x;
+   background-color: green;
+   height: 800px;
+   width: 900px;
+   background-size: 200px, 600px, 50px, 50px, 100px;
+}

@@ -1,0 +1,20 @@
+.bg-pink {
+    
+    background-color: pink;
+    height: 300px;
+    width: 300px;
+}
+.bg-blue {
+    position: absolute;
+    background-color: blue;
+    height: 300px;
+    width: 300px;
+    transform: translate(70%,-30%);
+    z-index: 2;
+}
+.bg-green {
+    background-color: green;
+    height: 300px;
+    width: 300px;
+    transform: translate(140%,40%);
+}
